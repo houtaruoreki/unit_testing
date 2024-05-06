@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Model List</title>
+</head>
+<body>
+    <h1>My Model List</h1>
+    <ul>
+        {% for obj in object_list %}
+            <li>{{ obj }}</li> 
+        {% empty %}
+            <li>No objects found</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
